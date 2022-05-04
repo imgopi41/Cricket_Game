@@ -1,5 +1,5 @@
 # Cricket_Game
-A simple Cricket game project implemented using conditional statments (if,if-else).**
+A simple Cricket game project implemented using conditional statments (if,if-else).
 
 ****I. Description****
 
