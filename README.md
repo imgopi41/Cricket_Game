@@ -13,7 +13,7 @@ IDE used: Pycharm
 
 **III. **Workflow****
 1. Firstly, program starts with user input, call for the toss, if user wins the toss user should choose either batting or bowling. If not, computer chooses randomly to bat or bowl.
-2. Condition 1: Who chose to bat first has to set target without losing 2 wickets in 12 bals (2 overs). User and computer has to choose numbers between 1 to 6 only.
+2. Condition 1: Who chose to bat first has to set target without losing 2 wickets in 12 balls (2 overs). User and computer has to choose numbers between 1 to 6 only.
 3. Score and remaining balls is shown for each ball.
 4. First innings will complete if 12 balls are bowled or if 2 wickets are lost. Runs and wickets will be stored in respective variables.
 5. Similarly, second innings will be played. One who batted first is going to bowl now and vice-versa
