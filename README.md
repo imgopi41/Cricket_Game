@@ -7,7 +7,7 @@ This is a simple cricket game to understand the working of conditional statement
 
 **II. Technology Stack**
 
-Language: Python(3.6)
+Language: Python(3.6),
 IDE used: Pycharm
 
 **III. **Workflow****
