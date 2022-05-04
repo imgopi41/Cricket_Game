@@ -1,10 +1,12 @@
 # Cricket_Game
-A simple Cricket game project implemented using conditional statments (if,if-else).
+A simple Cricket game project implemented using conditional statments (if,if-else).**
 
-**I. Description**
+****I. Description****
+
 This is a simple cricket game to understand the working of conditional statements. Here, the user plays against computer. After the toss, he/she can choose between the numbers 1-6, within 12 deliveries(2 overs) with a maximum of 2 wickets, to set a target(if batting first). This is followed up in the second innings as part of the chase.
 
 **II. Technology Stack**
+
 Language: Python(3.6)
 IDE used: Pycharm
 
@@ -16,6 +18,6 @@ IDE used: Pycharm
 5. Similarly, second innings will be played. One who batted first is going to bowl now and vice-versa
 6. One who chases the score under given condition user/computer is going to win the match**. 
 
-**IV. Applications & Future enhancements****
+**IV. Applications & Future enhancements**
 
 This can be enhanced as a backend for mobile applications with interactive UI.
