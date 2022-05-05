@@ -17,7 +17,7 @@ IDE used: Pycharm
 3. Score and remaining balls is shown for each ball.
 4. First innings will complete if 12 balls are bowled or if 2 wickets are lost. Runs and wickets will be stored in respective variables.
 5. Similarly, second innings will be played. One who batted first is going to bowl now and vice-versa
-6. One who chases the score under given condition user/computer is going to win the match**. 
+6. One who chases the score under given condition user/computer is going to win the match. 
 
 **IV. Applications & Future enhancements**
 
