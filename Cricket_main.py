@@ -152,18 +152,3 @@ elif runs_2 > runs_1:
 
 else:
     print("\nDraw match")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
