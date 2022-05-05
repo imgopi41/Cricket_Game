@@ -1,5 +1,7 @@
 import random
 
+$$$$$$$$$$$$$ Toss $$$$$$$$$$$$$$$$$
+
 print("\nWelcome to You v/s Computer Cricket game")
 toss = input("\nChoose HEADS or TAILS: ").upper()
 
@@ -128,6 +130,9 @@ print("Runs =",runs_2)
 print("Wickets =",wickets_2)
 
 print("\nResult")
+
+
+$$$$$$$$$$$$$$$$$$$ Result $$$$$$$$$$$$$$$$
 
 if runs_1 > runs_2:
 
