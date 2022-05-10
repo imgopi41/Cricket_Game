@@ -7,9 +7,9 @@ This is a simple cricket game to understand the working of conditional statement
 
 **II. Technology Stack**
 
-Language: Python(3.6)
+Language: Python
 
-IDE used: Pycharm
+IDE used: Pycharm(3.6)
 
 **III. **Workflow****
 1. Firstly, program starts with user input, call for the toss, if user wins the toss user should choose either batting or bowling. If not, computer chooses randomly to bat or bowl.
