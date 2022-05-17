@@ -19,6 +19,15 @@ IDE used: Pycharm(3.6)
 5. Similarly, second innings will be played. One who batted first is going to bowl now and vice-versa
 6. One who chases the score under given condition user/computer is going to win the match. 
 
+**Demo**
+
+![Demo](https://user-images.githubusercontent.com/99798157/168756106-2b1e2c7f-5983-4e49-968c-b772a5eebdab.JPG)
+![Demo2](https://user-images.githubusercontent.com/99798157/168756177-d67eed93-af0e-4cba-b86a-17a16f18ee13.JPG)
+![Demo3](https://user-images.githubusercontent.com/99798157/168756221-a4bd0357-3683-4359-945d-2493e1f593df.JPG)
+
+
+
+
 **IV. Applications & Future enhancements**
 
 This can be enhanced as a backend for mobile applications with interactive UI.
