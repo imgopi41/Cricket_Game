@@ -1,36 +1,38 @@
 import random
 
-$$$$$$$$$$$$$ Toss $$$$$$$$$$$$$$$$$
+# Toss
 
-print("\nWelcome to You v/s Computer Cricket game")
-toss = input("\nChoose HEADS or TAILS: ").upper()
+print("\nHere comes the Toss")
+toss = (input("Choose Heads or Tails: ")).upper()
 
-random_opt = random.randint(1,2)
-random_pc = random.randint(1,2)
+random_toss = random.randint(1, 2)  
+random_opt = random.randint(1, 2)   
 
-user_choice = 0
-pc_choice = 0
+u_opt = 0
+c_opt = 0
 
-if random_opt == 1 and toss == "HEADS":
-    print("\nYou have won the toss")
-    user_choice = input("\nChoose to bat or bowl: ").lower()
+if random_toss == 1 and toss == "heads":
+    print("\nYou won the toss")
+    u_opt = (input("Choose bat or ball: ")).lower()
 
-elif random_opt == 2 and toss == "TAILS":
-    print("\nYou have won the toss")
-    user_choice = input("\nChoose to bat or bowl: ").lower()
+elif random_toss == 2 and toss == "tails":
+    print("\nYou won the toss")
+    u_opt = (input("Choose bat or ball: ")).lower()
 
 else:
-    print("\nYou have lost the toss")
+    print("\nYou lost the toss")
 
-    if random_pc == 1:
-        pc_choice = "bat"
-        print("\nComputer choose to",pc_choice)
+    if random_opt == 1:
+        c_opt = "bat"
+        print("Computer choose to", c_opt)
 
-    elif random_pc == 2:
-        pc_choice = "bowl"
-        print("\nComputer choose to",pc_choice)
+    elif random_opt == 2:
+        c_opt = "ball"
+        print("Computer choose to", c_opt)
 
-# $$$$$$$$$$$$$$ First innings $$$$$$$$$$$$$$$$$$$$
+# First Innings
+
+print("\n---------- First Innings Begins ----------")
 
 runs_1 = 0
 wickets_1 = 0
@@ -38,117 +40,118 @@ balls_1 = 0
 
 while wickets_1 != 2 and balls_1 != 12:
 
-    user_input = int(input("Choose the number from (1 to 6): "))
-    pc_input = random.randint(1, 6)
+    u_choice = int(input("\nChoose any number from 1 to 6: "))
+    c_choice = random.randint(1, 6)
 
-    if user_input < 1 or user_input > 6:
-        print("\nPlease choose number from 1 to 6 only")
+    if u_choice < 1 or u_choice > 6:
+        print("\nPlease choose a value from 1 to 6.")
 
     else:
-        print("\nYour choice",user_input,"\nComputer choice",pc_input)
+        print("Your choice: ", u_choice, "\nComputer's choice: ", c_choice)
 
-        if user_input == pc_input:
-            wickets_1 = wickets_1 + 1
+        if u_choice == c_choice:
+            wickets_1 += 1
 
         else:
-            if user_choice == "bat" or pc_input == "bowl":
-                bat_first = "You"
-                bowl_first = "Computer"
-                runs_1 += user_input
+            if u_opt == "bat" or c_opt == "ball":
+                Bat_first = "You"
+                Ball_first = "Computer"
+                runs_1 += u_choice
 
-
-            elif user_choice =="bowl" or pc_input == "bat":
-                bat_first = "Computer"
-                bowl_first = "You"
-                runs_1 += pc_input
+            elif u_opt == "ball" or c_opt == "bat":
+                Bat_first = "Computer"
+                Ball_first = "You"
+                runs_1 += c_choice
 
         print("\nScore =", runs_1, "/", wickets_1)
 
         balls_1 += 1
 
         if balls_1 == 6:
-            print("\nOne over compeleted")
+            print("End of Over 1")
 
         elif balls_1 == 12:
-            print("\nTwo over's compeleted")
+            print("End of Over 2")
 
-        print("Balls Remaining is",12 - balls_1)
+        print("Balls remaining: ", 12 - balls_1)
 
-print("\nScore Card: You v/s Computer")
-print("Total runs is",runs_1)
-print("Total wickets is",wickets_1)
-print("Target",runs_1+1)
-print("\n",bowl_first,"need",runs_1+1,"runs To win the match")
+print("\n---------- End of Innings ----------")
 
-# $$$$$$$$$$$$$ Second innings $$$$$$$$$$$$$$$$
+print("\nFinal Score:")
+print("Runs =", runs_1)
+print("wickets =", wickets_1)
+
+print("\n", Ball_first, "needs", runs_1 + 1, "runs to win.")
+
+# Second Innings
+
+print("\n---------- Second Innings Begins ----------")
 
 runs_2 = 0
 wickets_2 = 0
 balls_2 = 0
 
-while balls_2 != 12 and wickets_2 !=2 and runs_2 <= runs_1:
+while wickets_2 != 2 and balls_2 != 12 and runs_2 <= runs_1:
 
-    user_input = int(input("\nChoose the number from (1 to 6): "))
-    pc_input = random.randint(1,6)
+    u_choice = int(input("\nChoose any number from 1 to 6: "))
+    c_choice = random.randint(1, 6)
 
-    if user_input < 1 and user_input > 6:
-        print("\nPlease choose the number from 1 to 6")
+    if u_choice < 1 or u_choice > 6:
+        print("\nPlease choose a value from 1 to 6.")
 
     else:
-        print("Your choice is: ",user_input,"\nComputer choice: ",pc_input)
+        print("Your choice: ", u_choice, "\nComputer's choice: ", c_choice)
 
-        if user_input == pc_input:
-            wickets_2 = wickets_2+1
-
+        if u_choice == c_choice:
+            wickets_2 += 1
 
         else:
-            if bat_first == "Computer":
-                runs_2 += user_input
-                bat_second = "You"
+            if Bat_first == "Computer":
+                runs_2 += u_choice
+                Bat_second = "You"
 
-            elif bat_first == "You":
-                runs_2 += pc_input
-                bat_second = "Computer"
+            elif Bat_first == "You":
+                runs_2 += c_choice
+                Bat_second = "Computer"
 
-        print("\nScore =",runs_2,"/",wickets_2)
+        print("\nScore =", runs_2, "/", wickets_2)
 
-        balls_2 = balls_2 + 1
+        balls_2 += 1
 
         if balls_2 == 6:
-            print("First over completed")
+            print("End of Over 1")
 
-        elif balls_2 ==12:
-            print("Two over's completed")
+        elif balls_2 == 12:
+            print("End of Over 2")
 
-        if wickets_2 != 2 and runs_2 <= runs_1 and balls_2 <= 11:
-            print("To win",runs_1 -runs_2+1,"runs needed from",12-balls_2,"balls")
+        if runs_2 <= runs_1 and balls_2 <= 11 and wickets_2 != 2:
+            print("To win:", runs_1 - runs_2 + 1, "runs needed from", 12 - balls_2, "balls.")
 
-print("\nEnd of the innings")
+print("\n---------- End of Innings ----------")
 
-print("\nScore: You v/s Computer")
-print("Runs =",runs_2)
-print("Wickets =",wickets_2)
+print("\nFinal Score:")
+print("Runs =", runs_2)
+print("wickets =", wickets_2)
 
-print("\nResult")
+# Result of Match
 
-
-$$$$$$$$$$$$$$$$$$$ Result $$$$$$$$$$$$$$$$
+print("\n~~~~~~~~~~ Result ~~~~~~~~~~")
 
 if runs_1 > runs_2:
 
-    if bat_first == "You":
-        print("Congratulations! You won the Match by", runs_1 - runs_2, "runs.")
+    if Bat_first == "You":
+        print("\nCongratulations! You won the Match by", runs_1 - runs_2, "runs.")
 
     else:
-        print("Better luck next time! The Computer won the Match by", runs_1 - runs_2, "runs.")
+        print("\nBetter luck next time! The Computer won the Match by", runs_1 - runs_2, "runs.")
 
 elif runs_2 > runs_1:
 
-    if bat_second == "You":
-        print("Congratulations! You won the Match by", 2 - wickets_2, "wickets.")
+    if Bat_second == "You":
+        print("\nCongratulations! You won the Match by", 2 - wickets_2, "wickets.")
 
     else:
-        print("Better luck next time! The Computer won the Match by", 2 - wickets_2, "wickets.")
+        print("\nBetter luck next time! The Computer won the Match by", 2 - wickets_2, "wickets.")
 
 else:
-    print("\nDraw match")
+    print("The Match is a Tie.", "\nNo one Wins.")
