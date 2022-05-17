@@ -2,8 +2,8 @@ import random
 
 # Toss
 
-print("\nHere comes the Toss")
-toss = (input("Choose Heads or Tails: ")).upper()
+print("Welcome to You v/s Computer Cricket game")
+toss = (input("\nChoose Heads or Tails: ")).upper()
 
 random_toss = random.randint(1, 2)  
 random_opt = random.randint(1, 2)   
